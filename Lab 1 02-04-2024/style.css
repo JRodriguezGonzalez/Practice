@@ -1,0 +1,170 @@
+/* styles.css */
+*{
+    box-sizing: border-box;
+}
+
+/*head*/
+.header{
+    background-color: #3f8880;
+    padding: 10px;
+    height: 150px;
+}
+
+.clasedeltitulo {
+    text-align: center; /* Centra el contenido horizontalmente */
+    color: #fef6cd; /* Color del texto */
+}
+
+#listapaginas {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Alinea los elementos de la lista horizontalmente */
+}
+
+#listapaginas li {
+    margin-right: 20px; /* Espacio entre los elementos de la lista */
+}
+
+#listapaginas li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento de la lista */
+}
+
+#listapaginas li a {
+    text-decoration: none;
+    color: #fef6cd; /* Color del texto */
+}
+
+/*content*/
+.content {
+    background-color: #d6ebc1;
+    position: relative; /* Establece la posición relativa para que los elementos absolutos se posicionen dentro de él */
+    width: 100%; /* Ancho completo del contenedor */
+    height: 3500px;
+    padding-top: 56.25%; /* Proporción 16:9 (para mantener la relación de aspecto) */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+}
+
+.content h1{
+    position: absolute; /* Establece la posición absoluta */
+    top: 0; /* Ubica el iframe en la parte superior */
+    margin-bottom: 10px;
+    color: #c0b476;
+    margin-left: 2.5%;
+}
+
+.content iframe {
+    position: absolute; /* Establece la posición absoluta */
+    top: 100px; /* Ubica el iframe en la parte superior */
+    left: 0; /* Ubica el iframe en la parte izquierda */
+    width: 95%; /* Ancho completo del iframe */
+    height: 95%; /* Altura completa del iframe */
+    border: 0; /* Elimina el borde del iframe */
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+/*footer*/
+.footer {
+    background-color: #9dc09d;
+    padding: 5px;
+    height: 100px;
+    display: flex; /* Utiliza flexbox para alinear los elementos en una sola fila */
+    justify-content: space-around; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.footer .col4 {
+    flex: 1; /* Ajusta el ancho de las columnas para que sean iguales */
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.social-media-links a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces dentro de .social-media-links */
+}
+
+#listpagesfooter {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#listpagesfooter li {
+    display: inline-block; /* Muestra los elementos de la lista en línea */
+    margin-right: 20px; /* Espacio entre los elementos de la lista */
+}
+
+#listpagesfooter li:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último elemento de la lista */
+}
+
+#listpagesfooter li a {
+    text-decoration: none;
+    color: #fef6cd; /* Color del texto */
+}
+
+/*ContentAcerca*/
+.contentAcerca {
+    background-color: #d6ebc1;
+    width: 100%; /* Ancho completo del contenedor */
+    min-height: 600px; /* Altura mínima del contenedor */
+    padding: 20px; /* Añade un poco de espacio alrededor del contenido */
+}
+
+[class*="class"] {
+    color: #c0b476;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+[id^=parrafo] {
+    font-size: 1.8vw; /* Utiliza el ancho del viewport para determinar el tamaño del texto */
+    margin-bottom: 20px; /* Espacio entre los párrafos */
+}
+
+[id$="list"]{
+    font-size: 1.8vw; /* Utiliza el ancho del viewport para determinar el tamaño del texto */
+    padding: 10px; /* Agrega un espacio alrededor de la lista */
+}
+
+
+/*Content Formulario*/
+.contentform {
+    background-color: #d6ebc1;
+    color: #c0b476;
+}
+
+/* Estilos para los elementos dentro de la tabla */
+.contentform table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse; /* Combina los bordes de las celdas */
+    font-size: 3.5vh;
+}
+
+.contentform td,
+.contentform th {
+    border: 3px solid #c0b476; /* Añade un borde sólido de 1px con el color especificado */
+    padding: 8px;
+}
+
+.contentform input,
+.contentform textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    color: #3f8880; /* Cambia el color del texto del textarea */
+}
+
+.contentform button {
+    background-color: #3f8880;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.contentform button:hover {
+    background-color: #2e6f23;
+}
